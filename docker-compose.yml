@@ -1,0 +1,13 @@
+version: '3'
+
+networks:
+  laravel:
+
+services:
+  cron:
+    build:
+      context: .
+      dockerfile: cron.dockerfile
+    container_name: cron
+    networks:
+      - laravel
