@@ -4,7 +4,7 @@ RUN apt-get update && apt-get -y install cron
 #RUN docker-php-ext-install pdo pdo_mysql
 # Grep all env variable and COPY to crontab file
 RUN printenv | sed 's/^\(.*\)$/\1/g' > /etc/cron.d/crontab
-ADD cronfile /et/cron.d/crons
+ADD cronfile /etc/cron.d/crons
 #COPY script.sh /etc
 #RUN chmod +x /etc/script.sh
 RUN cat /etc/cron.d/crons >> /etc/cron.d/crontab
