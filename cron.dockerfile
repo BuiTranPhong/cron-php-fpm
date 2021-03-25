@@ -1,4 +1,5 @@
 FROM php:7.4-fpm
+ENV APP_URL="hello ^^"
 RUN apt-get update && apt-get -y install cron
 #RUN docker-php-ext-install pdo pdo_mysql
 RUN touch /var/log/cron.log

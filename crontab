@@ -1,2 +1,2 @@
-* * * * * echo "hello world" >> /var/log/cron.log 2>&1
+* * * * * echo $APP_URL >> /var/log/cron.log 2>&1
 #end line
