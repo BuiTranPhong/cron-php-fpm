@@ -1,0 +1,4 @@
+* * * * * echo $APP_URL >> /var/log/cron.log 2>&1
+#* * * * * /etc/script.sh >> /var/log/cron.log 2>&1
+#* * * * * . /root/project_env.sh; echo $APP_URL >> /var/log/cron.log 2>&1
+#end line
